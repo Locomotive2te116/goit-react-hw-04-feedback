@@ -3,7 +3,6 @@ import { FeedbackOptions } from './Feedback/FeedbackOptions';
 import { Statistic } from './Statistic/Statistic';
 import { Section } from './Section/Section';
 import { Notification } from './Notification/Notification';
-// let total = 0;
 
 export class App extends React.Component {
   state = {
