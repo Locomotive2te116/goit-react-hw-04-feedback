@@ -32,10 +32,8 @@ export const App = () => {
     const total = countTotalFeedback();
     return total === 0 ? 0 : Math.floor(((good + neutral) / total) * 100);
   };
-
   const positivePercentage = countPositiveFeedbackPercentage();
   const total = countTotalFeedback();
-
   return (
     <div>
       <Section title="Please leave feedback">
