@@ -24,10 +24,12 @@ export const App = () => {
         break;
     }
   };
-  const countTotalFeedback = ({ good, neutral, bad }) => {
+  // const countTotalFeedback = ({ good, neutral, bad }) => {
+  const countTotalFeedback = () => {
     return good + neutral + bad;
   };
-  const countPositiveFeedbackPercentage = ({ good, neutral }) => {
+  // const countPositiveFeedbackPercentage = ({ good, neutral }) => {
+  const countPositiveFeedbackPercentage = () => {
     const total = countTotalFeedback();
     return total === 0 ? 0 : Math.floor(((good + neutral) / total) * 100);
   };
